@@ -7,7 +7,6 @@ while not number.isdigit():
     number = input("enter a number: ")
 
 
-for digit in number:
-    digit = int(digit)
-    result += digit
-print(f"Sum of digits: {result}")
+result = sum(int(digit) for digit in number)
+
+print(f"sum of digits: {result}")
