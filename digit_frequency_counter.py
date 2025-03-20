@@ -2,11 +2,11 @@
 
 
 number = input("enter a number: ")
-count = [0,0,0,0,0,0,0,0,0,0]
+count = [0] * 10  # list with 10 zeros
 
 for digit in number:
-    
     count[int(digit)] +=1
+
 print(count)
 
 for x in range(len(count)):
