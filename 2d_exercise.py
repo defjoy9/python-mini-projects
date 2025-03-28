@@ -15,3 +15,16 @@ for item in numbers[0]:
 
 #print the number in the middle (5)
 print(numbers[1][1])
+
+# exercise 2 - sum of all numbers in 2d list
+numbers = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+total = 0
+for row in numbers:
+    for item in row:
+        total += item
+
+print(f'total is {total}')
